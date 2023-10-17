@@ -1,306 +1,134 @@
-body {
-  background-color: #f2f2f2;
-  font-family: "Lato"; /* OPTIONAL: Google Fonts - base font */
-  font-weight: 300;
-  font-size: 16px;
-  color: #555;
-
-  -webkit-font-smoothing: antialiased;
-  -webkit-overflow-scrolling: touch;
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato", sans-serif;
 }
 
-/* Titles */
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway"; /* OPTIONAL: Google Fonts - title font */
-  font-weight: 300;
-  color: #333;
+.w3-bar, h1, button {
+  font-family: "Montserrat", sans-serif;
 }
 
-/* Paragraph & Typographic */
-p {
-  line-height: 28px;
-  margin-bottom: 25px;
+.fa-anchor, .fa-coffee {
+  font-size: 200px;
 }
 
-.centered {
-    text-align: center;
-}
-
-/* Links */
-a {
-  color: #1CBCAD;
-  word-wrap: break-word;
-
-  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
-  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
-  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
-  transition: color 0.1s ease-in, background 0.1s ease-in;
-}
-
-a:hover,
-a:focus {
-  color: #fffdfb;
-  text-decoration: none;
-  outline: 0;
-}
-
-a:before,
-a:after {
-  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
-  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
-  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
-  transition: color 0.1s ease-in, background 0.1s ease-in;
-}
-
- hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-/*---------------------------------------------------
-  SECTION WRAPS
----------------------------------------------------*/
-
-/* Header Wrap */
-.header {
-  background: #7ab2d3;
-  background: url(../images/header-bg.jpg) no-repeat center top;
-  padding-top:140px;
-  text-align:center;
-  background-attachment: relative;
-  background-position: center center;
-  min-height: 500px;
+.w3-top {
+  position: fixed;
   width: 100%;
-  
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
-
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
-.header h1 {
-  font-size: 80px;
-  color: white;
-  background: rgba(0,0,0,0.2);
-}
-
-.header h3 {
-  font-size: 20px;
+.w3-bar {
+  background-color: #ff0000;
   color: white;
 }
 
-.header h3 a {
-  color: #fff;
+.w3-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* About Wrap */
-.about {
-  background: #c5c5c5;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  color: white;
-} 
-
-.about h5, p {
-  color: white;
+.w3-left-align {
+  text-align: left;
 }
 
-.about i {
-  color: white;
-  font-size: 20px;
-  padding-right: 8px;
-  vertical-align: middle;
+.w3-large {
+  font-size: 16px;
 }
 
-.footer {
-  background: #2f2f2f;
-  padding-top: 50px;
-  padding-bottom: 50px;
+.w3-button:hover {
+  background-color: white;
+  color: #ff0000 !important;
 }
 
-.footer p {
-  color: white;
+.w3-container {
+  padding: 0.01em 16px;
 }
 
-.footer h5 {
-  color: white;
+.w3-center {
+  text-align: center;
 }
 
-.footer t {
-  font-weight: 700;
+.w3-margin {
+  margin: 16px 0 !important;
 }
 
-/* social icons: */
-.footer i {
-  padding-right: 8px;
-  /*color: #1abc9c;*/
+.w3-jumbo {
+  font-size: 56px !important;
 }
 
-/* Global Values */
-
-.desc {
-  padding-top: 50px;
+.w3-padding-large {
+  padding: 24px !important;
 }
 
-.desc p {
-  color: #2f2f2f;
+.w3-red {
+  color: #fff !important;
+  background-color: #ff0000 !important;
 }
 
-.desc t {
-  color: #34495e;
-  font-weight: 700;
+.w3-text-grey {
+  color: #757575;
 }
 
-.desc imp {
-  padding: 6px;
-  color: white;
-  background: #34495e;
+.w3-row-padding {
+  margin: 0 -16px;
 }
 
-.desc more {
-  color: #616669;
+.w3-light-grey {
+  background-color: #f1f1f1 !important;
 }
 
-
-sm {
-  font-size: 12px;
+.w3-opacity {
+  opacity: 0.6;
 }
 
-.desc .col-lg-3 {
-  text-transform: uppercase;
+.w3-black {
+  color: #000 !important;
+  background-color: #fff !important;
 }
 
-.container .row p.tight {
-  margin-bottom: 10px;
+.w3-hover-opacity:hover {
+  opacity: 0.8;
 }
 
-/* define some CSS3 animations: */
-body {
-  /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
-  -webkit-backface-visibility: hidden;
+.w3-hover-white:hover {
+  background-color: #fff !important;
+  color: #ff0000 !important;
 }
 
-.animated {
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  -o-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  animation-fill-mode: both;
+.w3-show {
+  display: block !important;
 }
 
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0; 
-  }
-
-  100% {
-    opacity: 1; 
-  }
+.fa {
+  padding: 8px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
 }
 
-@-moz-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
+.fa:hover {
+  opacity: 0.7;
 }
 
-@-o-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
+.fa-facebook-official {
+  color: #3B5998;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  } 
+.fa-instagram {
+  color: #125688;
 }
 
-.fadeIn {
-  -webkit-animation-name: fadeIn;
-  -moz-animation-name: fadeIn;
-  -o-animation-name: fadeIn;
-  animation-name: fadeIn;
+.fa-snapchat {
+  color: #fffc00;
 }
 
-/* 1 */
-@-webkit-keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(20px);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-  }
+.fa-pinterest-p {
+  color: #cb2027;
 }
 
-@-moz-keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    -moz-transform: translateY(20px);
-  }
-
-  100% {
-    opacity: 1;
-    -moz-transform: translateY(0);
-  }
+.fa-twitter {
+  color: #00aced;
 }
 
-@-o-keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    -o-transform: translateY(20px);
-  }
-
-  100% {
-    opacity: 1;
-    -o-transform: translateY(0);
-  }
+.fa-linkedin {
+  color: #007bb5;
 }
-
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.fadeInUp {
-  -webkit-animation-name: fadeInUp;
-  -moz-animation-name: fadeInUp;
-  -o-animation-name: fadeInUp;
-  animation-name: fadeInUp;
-  }
